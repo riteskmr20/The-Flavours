@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.res-name-details{
+    background: linear-gradient(
+        rgb(255,255,255) -6.71%,
+        rgb(245,245,245) 56.19%,
+        rgb(255,255,255) 106.56%
+        
+    );
+}
+
+.cart-button{
+background-color: #fc8019;
+color: #fff;
+padding: 11px 20px;
+text-align: center;
+font-weight: 600;
+font-size: 15px;
+}
+
+.items-name{
+    -webkit-font-smoothing:antialiased;
+    font-family: Basis_Grotesque_Pro_Bold;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: rgba(2,6,12,0.75);
+}
+.restaurant-details{
+    background: linear-gradient(
+        rgb(255, 255, 255) 3.71%,
+        rgba(255, 255, 255, 0.723) 56.19%,
+        rgba(215, 215, 218, 0.823) 106.56%
+    );
+    padding: 0px 16px 16px;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+}
+
+
+.desc{
+    color: rgba(2, 6, 12, 0.698);
+}
