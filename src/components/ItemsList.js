@@ -13,51 +13,46 @@ const ItemList = ({ items }) => {
   };
 
   return (
-    <div>
+    <div className="space-y-4">
       {items.map((item) => (
         <div
           key={item?.card?.info?.id}
-          className="border-gray-200 border-b-2 flex justify-between "
+          className="border border-gray-200 bg-white rounded-lg shadow-md flex flex-col md:flex-row"
         >
-          <div className="w-9/12  py-7">
-            <div className=" py-2">
-              <span className="items-name">{item?.card?.info?.name}</span>
-
-              <p className="font-bold">
-                ₹{" "}
-                {item?.card?.info?.price
-                  ? item?.card?.info?.price / 100
-                  : item?.card?.info?.defaultPrice / 100}
-              </p>
-
-              <p className="inline-flex items-center my-2">
-                {item?.card?.info?.ratings?.aggregatedRating?.rating ? (
-                  <>
-                    <FaStar className="mr-1 size-3" />
-                    {item.card.info.ratings.aggregatedRating.rating} (
-                    {item.card.info.ratings.aggregatedRating.ratingCountV2})
-                  </>
-                ) : null}
-              </p>
-              
-            </div>
-            <p className="desc text-[16px] text-pretty break-words">
+          <div className="w-full md:w-9/12 p-6">
+            <h3 className="text-xl font-semibold mb-2">
+              {item?.card?.info?.name}
+            </h3>
+            <p className="text-lg font-bold mb-2">
+              ₹ {item?.card?.info?.price
+                ? item?.card?.info?.price / 100
+                : item?.card?.info?.defaultPrice / 100}
+            </p>
+            <p className="inline-flex items-center text-yellow-500 mb-2">
+              {item?.card?.info?.ratings?.aggregatedRating?.rating ? (
+                <>
+                  <FaStar className="text-xl mr-1" />
+                  {item.card.info.ratings.aggregatedRating.rating} (
+                  {item.card.info.ratings.aggregatedRating.ratingCountV2})
+                </>
+              ) : null}
+            </p>
+            <p className="text-gray-700 text-base break-words">
               {item?.card?.info?.description}
             </p>
           </div>
 
-          <div className="w-3/12 p-4 ">
-            <div className="absolute">
-              <button
-                className="p-2 bg-white shadow-sm font-bold text-green-600  rounded-lg w-24  hover:bg-gray-300 mt-36 "
-                onClick={() => dispatchItems(item)}
-              >
-                ADD
-              </button>
-            </div>
+          <div className="w-full md:w-3/12 p-6 flex flex-col items-center justify-center">
+            <button
+              className="bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-md hover:bg-green-700 transition-colors mb-4"
+              onClick={() => dispatchItems(item)}
+            >
+              ADD
+            </button>
             <img
               src={IMG_CDN_URL + item?.card?.info?.imageId}
-              className="h-36 w-36 m-1 rounded-lg mt-8"
+              alt={item?.card?.info?.name}
+              className="h-36 w-36 object-cover rounded-lg"
             />
           </div>
         </div>

@@ -29,7 +29,6 @@ const ResMenu = () => {
     resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
   //  console.log(itemCards)
 
-
   const categories =
     resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
       (c) =>
@@ -46,18 +45,24 @@ const ResMenu = () => {
             <h1 className="m-auto">{name}</h1>
           </div>
 
-          <div className="res-name-details mt-8 border-2  p-4  rounded-xl shadow-neutral-700 from-current ">
-            <h3 className="font-semibold inline-flex items-center ">
-            <FcRating className="mr-1" />{avgRating} ({totalRatingsString}) • {costForTwoMessage}
+          <div className="mt-8 border border-gray-300 p-6 rounded-xl shadow-md bg-white">
+            <h3 className="text-xl font-semibold flex items-center mb-4">
+              <FcRating className="text-2xl mr-2" />
+              {avgRating} ({totalRatingsString}) • {costForTwoMessage}
             </h3>
-            <p>{cuisines.join(", ")}</p>
-            <p className="ms-5">Outlet {areaName}</p>
-            <p className="lowercase ms-5">{sla?.slaString}</p>
-            <p>{feeDetails?.message}</p>
+            <p className="text-gray-700 text-base mb-3">
+              {cuisines.join(", ")}
+            </p>
+            <p className="text-gray-600 text-base mb-3">Outlet: {areaName}</p>
+            <p className="text-gray-600 text-base mb-3 lowercase">
+              {sla?.slaString}
+            </p>
+            <p className="text-gray-600 font-semibold">
+  2.1 kms | <span className="font-semibold text-gray-600">₹20 Delivery fee will apply</span>
+</p>
+
           </div>
         </div>
-
-        <h2>Menu</h2>
 
         {/*Categories Accordian */}
         {categories.map((category, index) => (

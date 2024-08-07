@@ -5,6 +5,7 @@ import Shimmer from "./Shimmer";
 import Closeres from "./Closedres";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import Footer from "./Footer";
 
 
 
@@ -25,6 +26,20 @@ const Body = () => {
     fetchData();
    }, []);
   
+
+   const handleTopRatedFilter = () => {
+    
+      
+       const filteredList=listOfRestaurant.filter
+       (
+         (res)=>res.info.avgRating > 4.3
+
+       );
+       setfilteredRestaurant(filteredList);
+       // console.log(filteredList);
+      }
+
+
 
 
  {/*Fetching api of restaurant cards*/}
@@ -77,57 +92,43 @@ const Body = () => {
       ):(
         
         <div className="body">
-          <div className="filter flex">
-
-
-
-            {/* search bar */}
-            <div className="search m-4 p-4">
-
-              <input type="text" className="border border-solid border-black  " value={searchText} onChange={(e)=>
-              {
-                setSearchText(e.target.value);
-              }}/> 
-
-             
-              <button className="bg-zinc-400 hover:bg-gray-400 m-4 py-2 px-4 rounded-sm" onClick=
-              {()=>{
+          <div className="flex flex-col md:flex-row justify-between items-center bg-white shadow-md p-6 rounded-lg">
+      {/* Search Bar */}
+      <div className="flex flex-col md:flex-row items-center mb-4 md:mb-0">
+        <input
+          type="text"
+          className="border border-gray-300 rounded-l-lg p-2 w-full md:w-64 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          placeholder="Search for restaurants..."
+          value={searchText}
+          onChange={(e) => setSearchText(e.target.value)}
+        />
+        <button
+          className="bg-yellow-500 text-white hover:bg-yellow-600 rounded-r-lg px-4 py-2 mt-2 md:mt-0 md:ml-2 transition-transform transform hover:scale-105"
+          onClick={()=>{
                 
 
-                const filteredRes=listOfRestaurant.filter((res)=>
-                res.info.name.toLowerCase().includes(searchText.toLowerCase())
-                )
-
-                setfilteredRestaurant(filteredRes);
-
-                // console.log(searchText);
-
-              }}>Search</button>
-
-            </div>
-
-
-
-
-            {/* top-rated restaurant */}
-            <div className="flex m-4 p-4 items-center">
-              <button className="filter-btn px-4 py-2 bg-zinc-400 rounded-sm" 
-               onClick=
-               {() =>
-               {  
-                const filteredList=listOfRestaurant.filter
-                (
-                  (res)=>res.info.avgRating > 4.3
+            const filteredRes=listOfRestaurant.filter((res)=>
+            res.info.name.toLowerCase().includes(searchText.toLowerCase())
+            )
   
-                );
-                setfilteredRestaurant(filteredList);
-                // console.log(filteredList);
-               }
-               }>Top-rated Restaurant</button>
-            </div>
-           
+            setfilteredRestaurant(filteredRes);
+  
+            // console.log(searchText);
+  
+          }}
+        >
+          Search
+        </button>
+      </div>
 
-           </div>
+      {/* Top-rated Restaurant */}
+      <button
+        className="bg-yellow-500 text-white hover:bg-yellow-600 px-6 py-2 rounded-lg transition-transform transform hover:scale-105"
+        onClick={handleTopRatedFilter}
+      >
+        Top-rated Restaurant
+      </button>
+    </div>
 
 
           
@@ -143,11 +144,15 @@ const Body = () => {
               })  
             }
 
-           
+         
             
               
           
           </div>
+
+          <div>
+            <Footer/>
+           </div>
         </div>
       );
   }

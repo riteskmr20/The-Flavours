@@ -1,53 +1,57 @@
-import Logo from   "./Img/Logo.png";
-import { useState,useContext } from "react";
+import Logo from "./Img/Logo.png";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
 import { IoHomeOutline } from "react-icons/io5";
-// import { MdOutlineAssignmentInd } from "react-icons/md";
 
 const Header = () => {
+  const [btnNameReact, setBtnNameReact] = useState("Login");
+  const data = useContext(UserContext);
 
-const [btnNameReact,setbtnNameReact] = useState("Login");
+  {/* Subscribing to the store using selector */}
+  const cartItems = useSelector((store) => store.cart.items);
 
-const data=useContext(UserContext);
-
-
-{/*Subscribing to the store using selector*/}
-const cartItems=useSelector((store)=>store.cart.items);
-
-    return (
-      <div className="flex justify-between shadow-md ">
+  return (
+    <header className="bg-gray-900 text-white shadow-md">
+      <div className="container mx-auto flex justify-between items-center py-4 px-6">
         <div className="logo-container">
-
-          <Link to="/"><img
-            className="w-24 ml-20 cursor-pointer transition ease-in delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-50;"
-            src={Logo}
-          /></Link>
-
+          <Link to="/">
+            <img
+              className="w-24 cursor-pointer transition-transform transform hover:scale-110"
+              src={Logo}
+              alt="Logo"
+            />
+          </Link>
         </div>
-        <div className="flex items-center">
-          <ul className="flex p-7 me-20  ">
-            <li className="px-4 flex"><Link to="/"><IoHomeOutline /> Home</Link></li>
-            <li className="px-4"><Link to="/about">About Us</Link></li>
-            <li className="px-4"><Link to="/contact">Contact Us</Link></li>
-            <li className="px-4 font-bold"><Link to="/cart">Cart ({cartItems.length} items)</Link></li>
-
-            <button className="login-btn px-4"
-            onClick={()=>{
-              btnNameReact==="Login"
-              ? setbtnNameReact("Logout")
-              :setbtnNameReact("Login");
+        <nav className="flex items-center">
+          <ul className="flex space-x-6">
+            <li className="flex items-center space-x-2">
               
-              // console.log(btnNameReact);
-            }}>
-              {btnNameReact}
-
-            </button>
+              <Link to="/" className="hover:text-yellow-500 transition-colors">Home</Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-yellow-500 transition-colors">About Us</Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-yellow-500 transition-colors">Contact Us</Link>
+            </li>
+            <li className="">
+              <Link to="/cart" className="hover:text-yellow-500 transition-colors">Cart ({cartItems.length})</Link>
+            </li>
           </ul>
-        </div>
+          <button
+            className="ml-6 bg-yellow-500 text-gray-900 px-4 py-2 rounded-full hover:bg-yellow-600 transition-colors"
+            onClick={() => {
+              setBtnNameReact(btnNameReact === "Login" ? "Logout" : "Login");
+            }}
+          >
+            {btnNameReact}
+          </button>
+        </nav>
       </div>
-    );
-  };  
+    </header>
+  );
+};
 
-  export default Header;
+export default Header;
