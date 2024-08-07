@@ -67,7 +67,7 @@ A React-based web application that replicates key functionalities of the Swiggy 
 
 ### Contact Page
 <p align="center">
-  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/contact%20us.png" alt="Contact Page Screenshot" width="800" />
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/contanct%20us.png" alt="Contact Page Screenshot" width="800" />
 </p>
 
 ### Menu Page
