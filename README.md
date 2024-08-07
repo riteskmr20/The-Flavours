@@ -51,6 +51,7 @@ A React-based web application that replicates key functionalities of the Swiggy 
   <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/about.png" alt="Screenshot 3" width="800" />
   <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/contanct%20us.png" alt="Screenshot 4" width="800" />
   <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/menu%20items.png" alt="Screenshot 5" width="800" />
+	<img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/cart.png" width="800" />
 </p>
 
 [Live Demo](https://whitegallery.up.railway.app/)
