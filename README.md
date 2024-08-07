@@ -49,9 +49,9 @@
 A React-based web application that replicates key functionalities of the Swiggy food delivery platform. The app leverages the Swiggy API to fetch and display restaurant data, manage user interactions, and handle cart functionality.
 
 <p align="center">
-	#  Main Page
+	###  Main Page
   <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/top.png" alt="Screenshot 1" width="800" />
-	#  All Restaurants
+	###  All Restaurants
   <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/top.png" alt="Screenshot 2" width="800" />\
 	#  About Page
   <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/about.png" alt="Screenshot 3" width="800" />
