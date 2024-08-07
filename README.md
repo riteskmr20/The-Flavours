@@ -43,6 +43,9 @@
 
 ##  Overview
 
+[Live Demo](https://the-flavours.vercel.app/)
+
+
 A React-based web application that replicates key functionalities of the Swiggy food delivery platform. The app leverages the Swiggy API to fetch and display restaurant data, manage user interactions, and handle cart functionality.
 
 <p align="center">
@@ -54,7 +57,7 @@ A React-based web application that replicates key functionalities of the Swiggy 
 	<img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/cart.png" width="800" />
 </p>
 
-[Live Demo](https://the-flavours.vercel.app/)
+
 ---
 
 ##  Features
