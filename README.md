@@ -48,20 +48,38 @@
 
 A React-based web application that replicates key functionalities of the Swiggy food delivery platform. The app leverages the Swiggy API to fetch and display restaurant data, manage user interactions, and handle cart functionality.
 
+## Screenshots
+
+### Main Page
 <p align="center">
-	###  Main Page
-  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/top.png" alt="Screenshot 1" width="800" />
-	###  All Restaurants
-  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/top.png" alt="Screenshot 2" width="800" />\
-	#  About Page
-  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/about.png" alt="Screenshot 3" width="800" />
-	#  Contact Page
-  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/contanct%20us.png" alt="Screenshot 4" width="800" />
-	#  Menu Page
-  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/menu%20items.png" alt="Screenshot 5" width="800" />
-	#  Cart Page
-	<img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/cart.png" width="800" />
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/top.png" alt="Main Page Screenshot" width="800" />
 </p>
+
+### All Restaurants
+<p align="center">
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/top.png" alt="All Restaurants Screenshot" width="800" />
+</p>
+
+### About Page
+<p align="center">
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/about.png" alt="About Page Screenshot" width="800" />
+</p>
+
+### Contact Page
+<p align="center">
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/contact%20us.png" alt="Contact Page Screenshot" width="800" />
+</p>
+
+### Menu Page
+<p align="center">
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/menu%20items.png" alt="Menu Page Screenshot" width="800" />
+</p>
+
+### Cart Page
+<p align="center">
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/cart.png" alt="Cart Page Screenshot" width="800" />
+</p>
+
 
 
 ---
