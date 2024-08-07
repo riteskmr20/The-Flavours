@@ -5,7 +5,7 @@
     <h1 align="center">THE-FLAVOURS</h1>
 </p>
 <p align="center">
-    <em>HTTP error 401 for prompt `slogan`</em>
+    <em>Best Food deliveries at your doorstep</em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/riteskmr20/The-Flavours?style=flat&color=0080ff" alt="license">
@@ -31,27 +31,32 @@
 > - [ Overview](#-overview)
 > - [ Features](#-features)
 > - [ Repository Structure](#-repository-structure)
-> - [ Modules](#-modules)
 > - [ Getting Started](#-getting-started)
 >   - [ Installation](#-installation)
 >   - [ Running The-Flavours](#-running-The-Flavours)
 >   - [ Tests](#-tests)
 > - [ Project Roadmap](#-project-roadmap)
 > - [ Contributing](#-contributing)
-> - [ License](#-license)
-> - [ Acknowledgments](#-acknowledgments)
+
+## Demo
+
+Go for this link 
 
 ---
 
 ##  Overview
 
-HTTP error 401 for prompt `overview`
+A React-based web application that replicates key functionalities of the Swiggy food delivery platform. The app leverages the Swiggy API to fetch and display restaurant data, manage user interactions, and handle cart functionality.
 
 ---
 
 ##  Features
 
-HTTP error 401 for prompt `features`
+Features
+Home Page: Displays a list of restaurants with options to filter and search.
+Restaurant Details: Provides detailed information about a selected restaurant, including ratings, cost, and cuisine.
+Cart: Allows users to add items to their cart and view the cart contents.
+Contact Page: Provides contact information and additional details.
 
 ---
 
@@ -96,60 +101,6 @@ HTTP error 401 for prompt `features`
     └── tailwind.config.js
 ```
 
----
-
-##  Modules
-
-<details closed><summary>.</summary>
-
-| File                                                                                            | Summary                                        |
-| ---                                                                                             | ---                                            |
-| [index.html](https://github.com/riteskmr20/The-Flavours/blob/master/index.html)                 | HTTP error 401 for prompt `index.html`         |
-| [style.css](https://github.com/riteskmr20/The-Flavours/blob/master/style.css)                   | HTTP error 401 for prompt `style.css`          |
-| [package.json](https://github.com/riteskmr20/The-Flavours/blob/master/package.json)             | HTTP error 401 for prompt `package.json`       |
-| [babel.config.js](https://github.com/riteskmr20/The-Flavours/blob/master/babel.config.js)       | HTTP error 401 for prompt `babel.config.js`    |
-| [app.js](https://github.com/riteskmr20/The-Flavours/blob/master/app.js)                         | HTTP error 401 for prompt `app.js`             |
-| [tailwind.config.js](https://github.com/riteskmr20/The-Flavours/blob/master/tailwind.config.js) | HTTP error 401 for prompt `tailwind.config.js` |
-| [jest.config.js](https://github.com/riteskmr20/The-Flavours/blob/master/jest.config.js)         | HTTP error 401 for prompt `jest.config.js`     |
-| [package-lock.json](https://github.com/riteskmr20/The-Flavours/blob/master/package-lock.json)   | HTTP error 401 for prompt `package-lock.json`  |
-
-</details>
-
-<details closed><summary>src.utils</summary>
-
-| File                                                                                                          | Summary                                                    |
-| ---                                                                                                           | ---                                                        |
-| [UserContext.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/utils/UserContext.js)             | HTTP error 401 for prompt `src/utils/UserContext.js`       |
-| [cartSlice.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/utils/cartSlice.js)                 | HTTP error 401 for prompt `src/utils/cartSlice.js`         |
-| [constants.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/utils/constants.js)                 | HTTP error 401 for prompt `src/utils/constants.js`         |
-| [appStore.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/utils/appStore.js)                   | HTTP error 401 for prompt `src/utils/appStore.js`          |
-| [useRestaurantMenu.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/utils/useRestaurantMenu.js) | HTTP error 401 for prompt `src/utils/useRestaurantMenu.js` |
-| [useOnlineStatus.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/utils/useOnlineStatus.js)     | HTTP error 401 for prompt `src/utils/useOnlineStatus.js`   |
-| [mockData.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/utils/mockData.js)                   | HTTP error 401 for prompt `src/utils/mockData.js`          |
-
-</details>
-
-<details closed><summary>src.components</summary>
-
-| File                                                                                                                 | Summary                                                          |
-| ---                                                                                                                  | ---                                                              |
-| [Header.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/Header.js)                         | HTTP error 401 for prompt `src/components/Header.js`             |
-| [About.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/About.js)                           | HTTP error 401 for prompt `src/components/About.js`              |
-| [Cart.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/Cart.js)                             | HTTP error 401 for prompt `src/components/Cart.js`               |
-| [ResMenu.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/ResMenu.js)                       | HTTP error 401 for prompt `src/components/ResMenu.js`            |
-| [Contact.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/Contact.js)                       | HTTP error 401 for prompt `src/components/Contact.js`            |
-| [Error.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/Error.js)                           | HTTP error 401 for prompt `src/components/Error.js`              |
-| [Closedres.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/Closedres.js)                   | HTTP error 401 for prompt `src/components/Closedres.js`          |
-| [Body.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/Body.js)                             | HTTP error 401 for prompt `src/components/Body.js`               |
-| [ItemsList.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/ItemsList.js)                   | HTTP error 401 for prompt `src/components/ItemsList.js`          |
-| [Footer.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/Footer.js)                         | HTTP error 401 for prompt `src/components/Footer.js`             |
-| [RestaurantCategory.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/RestaurantCategory.js) | HTTP error 401 for prompt `src/components/RestaurantCategory.js` |
-| [Shimmer.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/Shimmer.js)                       | HTTP error 401 for prompt `src/components/Shimmer.js`            |
-| [User.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/User.js)                             | HTTP error 401 for prompt `src/components/User.js`               |
-| [UserClass.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/UserClass.js)                   | HTTP error 401 for prompt `src/components/UserClass.js`          |
-| [RestaurantCard.js](https://github.com/riteskmr20/The-Flavours/blob/master/src/components/RestaurantCard.js)         | HTTP error 401 for prompt `src/components/RestaurantCard.js`     |
-
-</details>
 
 ---
 
@@ -199,11 +150,6 @@ npm test
 
 ---
 
-##  Project Roadmap
-
-- [X] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
 
 ---
 
@@ -243,16 +189,6 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 </details>
 
 ---
-
-##  License
-
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
-
-##  Acknowledgments
-
-- List any resources, contributors, inspiration, etc. here.
 
 [**Return**](#-quick-links)
 
