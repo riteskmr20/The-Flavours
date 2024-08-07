@@ -54,7 +54,7 @@ A React-based web application that replicates key functionalities of the Swiggy 
 	<img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/cart.png" width="800" />
 </p>
 
-[Live Demo](https://whitegallery.up.railway.app/)
+[Live Demo](https://the-flavours.vercel.app/)
 ---
 
 ##  Features
