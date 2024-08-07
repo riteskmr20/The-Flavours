@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
+ <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/Logo.9832a24e.png" width="100" />
 </p>
 <p align="center">
     <h1 align="center">THE-FLAVOURS</h1>
@@ -38,9 +38,6 @@
 > - [ Project Roadmap](#-project-roadmap)
 > - [ Contributing](#-contributing)
 
-## Demo
-
-Go for this link 
 
 ---
 
@@ -48,6 +45,15 @@ Go for this link
 
 A React-based web application that replicates key functionalities of the Swiggy food delivery platform. The app leverages the Swiggy API to fetch and display restaurant data, manage user interactions, and handle cart functionality.
 
+<p align="center">
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/top.png" alt="Screenshot 1" width="800" />
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/top.png" alt="Screenshot 2" width="800" />
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/about.png" alt="Screenshot 3" width="800" />
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/contanct%20us.png" alt="Screenshot 4" width="800" />
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/menu%20items.png" alt="Screenshot 5" width="800" />
+</p>
+
+[Live Demo](https://whitegallery.up.railway.app/)
 ---
 
 ##  Features
