@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
+ <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/Logo.9832a24e.png" width="100" />
 </p>
 <p align="center">
     <h1 align="center">THE-FLAVOURS</h1>
@@ -38,15 +38,49 @@
 > - [ Project Roadmap](#-project-roadmap)
 > - [ Contributing](#-contributing)
 
-## Demo
-
-Go for this link 
 
 ---
 
 ##  Overview
 
+[Live Demo](https://the-flavours.vercel.app/)
+
+
 A React-based web application that replicates key functionalities of the Swiggy food delivery platform. The app leverages the Swiggy API to fetch and display restaurant data, manage user interactions, and handle cart functionality.
+
+## Screenshots
+
+### Main Page
+<p align="center">
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/top.png" alt="Main Page Screenshot" width="800" />
+</p>
+
+### All Restaurants
+<p align="center">
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/top.png" alt="All Restaurants Screenshot" width="800" />
+</p>
+
+### About Page
+<p align="center">
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/about.png" alt="About Page Screenshot" width="800" />
+</p>
+
+### Contact Page
+<p align="center">
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/contanct%20us.png" alt="Contact Page Screenshot" width="800" />
+</p>
+
+### Menu Page
+<p align="center">
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/menu%20items.png" alt="Menu Page Screenshot" width="800" />
+</p>
+
+### Cart Page
+<p align="center">
+  <img src="https://github.com/riteskmr20/The-Flavours/blob/main/demo/cart.png" alt="Cart Page Screenshot" width="800" />
+</p>
+
+
 
 ---
 
