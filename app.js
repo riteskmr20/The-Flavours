@@ -10,6 +10,8 @@ import ResMenu from "./src/components/ResMenu";
 import { Provider } from "react-redux";
 import appStore from "./src/utils/appStore";
 import Cart from "./src/components/Cart";
+import { Dummy } from "./src/components/Dummy";
+import SeatBook  from "./src/components/SeatBook";
 
 // import LogoImage from "./Img/Logo.png";
 
@@ -70,6 +72,10 @@ const appRouter = createBrowserRouter([
       {
         path:"/cart",
         element:<Cart/>,
+      },
+      {
+        path:"/dum",
+        element:<Dummy/>,
       }
     ],
    
